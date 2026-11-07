@@ -1,0 +1,5 @@
+config,mean,std
+"{'lr': 0.001, 'patience': 150, 'max_epochs': 2000}",0.832,0.059
+"{'lr': 0.003, 'patience': 150, 'max_epochs': 2000}",0.823,0.055
+"{'lr': 0.003, 'patience': 60, 'max_epochs': 800, 'wd': 0.01}",0.823,0.055
+"{'lr': 0.01, 'patience': 60, 'max_epochs': 800}",0.783,0.087

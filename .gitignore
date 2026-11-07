@@ -1,0 +1,6 @@
+data/*.h5ad
+data/*.npy
+data/*.pkl
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

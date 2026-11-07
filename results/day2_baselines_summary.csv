@@ -1,0 +1,12 @@
+,,pearson_delta,pearson_delta,pearson_delta_top20,pearson_delta_top20,pearson_delta_excl_target,pearson_delta_excl_target,mse_top20,mse_top20,pearson_expr,pearson_expr
+,,mean,std,mean,std,mean,std,mean,std,mean,std
+split,model,,,,,,,,,,
+double,additive,0.912,0.006,0.957,0.002,0.909,0.006,0.053,0.009,0.996,0.0
+double,mean_delta,0.528,0.05,0.543,0.073,0.538,0.05,0.358,0.048,0.985,0.002
+double,ridge_embed,0.702,0.046,0.75,0.07,0.704,0.046,0.243,0.026,0.99,0.001
+double,ridge_onehot,0.923,0.01,0.963,0.005,0.92,0.011,0.039,0.009,0.997,0.0
+double,zero,0.0,0.0,0.0,0.0,0.0,0.0,0.485,0.056,0.981,0.003
+single,mean_delta,0.403,0.031,0.463,0.061,0.415,0.032,0.165,0.031,0.993,0.001
+single,ridge_embed,0.364,0.055,0.403,0.073,0.373,0.054,0.196,0.022,0.991,0.001
+single,ridge_onehot,0.408,0.04,0.473,0.059,0.421,0.043,0.185,0.033,0.993,0.001
+single,zero,0.0,0.0,0.0,0.0,0.0,0.0,0.215,0.032,0.992,0.001
