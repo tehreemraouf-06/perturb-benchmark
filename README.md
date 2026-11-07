@@ -1,8 +1,4 @@
-import os
-WORK = globals().get('WORK', '/content/perturb-benchmark')
-os.makedirs(WORK, exist_ok=True)
-
-README = r'''# Do deep models beat linear baselines at predicting unseen CRISPR perturbation responses?
+# Do deep models beat linear baselines at predicting unseen CRISPR perturbation responses?
 
 A small, leakage-aware benchmark on the Norman et al. (2019) Perturb-seq dataset. It asks whether neural networks predict the transcriptional effect of **unseen** genetic perturbations better than simple linear and additive baselines.
 
@@ -15,7 +11,7 @@ A small, leakage-aware benchmark on the Norman et al. (2019) Perturb-seq dataset
 3. **Raw-expression correlation is misleading.** Even a model that predicts "no change" (`zero`) gets a Pearson correlation of 0.98 or higher on raw expression. All reported conclusions therefore use the correlation of the *change* relative to control.
 4. **Trainable embeddings helped on doubles (0.823 vs 0.727) but hurt on unseen singles (0.278 vs 0.345).** A plausible explanation, not tested here, is that training moves the embeddings of genes seen in training while an unseen gene keeps its initial embedding, so the two no longer match.
 
-> TODO: add one sentence from the MLP sensitivity check (`results/mlp_sensitivity_double.csv`), e.g. "Across 4 training configurations the MLP stayed below X."
+
 
 ## Data
 
@@ -146,8 +142,3 @@ pip install -r requirements.txt
 ## Author
 
 GitHub: [tehreemraouf-06](https://github.com/tehreemraouf-06)
-'''
-
-with open(f'{WORK}/README.md', 'w', encoding='utf-8') as f:
-    f.write(README)
-print("README.md written to", WORK, "|", len(README.splitlines()), "lines")
