@@ -95,7 +95,7 @@ Mean ± SD over 5 seeds. Best value per column in each table is **bold**.
 - Perturbations with the weakest true effects are hardest to predict (Figure 3; tables in `results/hardest_double.csv` and `results/hardest_single.csv`).
 - Genes with the largest prediction error are listed in `results/gene_error_double_ridge_onehot.csv`.
 
-> TODO: add 1-2 sentences on what the top-error genes do, based on your own look-up of the top genes in that file.
+- **Top-20 genes are chosen from the true effect,** following common practice..
 
 ## Limitations
 
@@ -139,9 +139,9 @@ pip install -r requirements.txt
 
 ## References
 
-- Norman, T. M. et al. Exploring genetic interaction manifolds constructed from rich single-cell phenotypes. *Science* (2019).
-- Peidli, S. et al. scPerturb: harmonized single-cell perturbation data. *Nature Methods* (2024).
-- Ahlmann-Eltze, C., Huber, W., Anders, S. Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines. *Nature Methods* (2025). Closely related prior work; this project is an independent small-scale replication of the question on one dataset.
+- Norman, T. M. et al. Exploring genetic interaction manifolds constructed from rich single-cell phenotypes. *Science* 365, 786-793 (2019).
+- Peidli, S. et al. scPerturb: harmonized single-cell perturbation data. *Nature Methods* (2024). doi:10.1038/s41592-023-02144-y
+- Ahlmann-Eltze, C., Huber, W., Anders, S. Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines. *Nature Methods* 22, 1657-1661 (2025). doi:10.1038/s41592-025-02772-6. Closely related work that benchmarked foundation models and GEARS against simple baselines. This project asks a similar question at small scale, on one dataset, with simple MLPs.
 
 ## Author
 
